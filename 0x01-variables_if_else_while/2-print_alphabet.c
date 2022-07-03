@@ -2,33 +2,19 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new line.
+ * Description: Get a random number and check its last digit, compare it with 5
  * Return: 0
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	char c = 'a';
 
-	while (d < 10)
+	while (c <= 'z')
 	{
-		c = 0;
-		while (c < 10)
-		{
-
-			putchar('0' + d);
-			putchar('0' + c);
-
-			if (c + d != 18)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			c++;
-		}
-		d++;
+		putchar(c);
+		c++;
 	}
+
 	putchar('\n');
 	return (0);
 }
