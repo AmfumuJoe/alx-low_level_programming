@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - print the result of the multiplication, followed by a new line
+ * main - prints the number of arguments passed into the program
  * @argc: int
  * @argv: list
  * Return: 0
@@ -9,13 +9,13 @@
 
 int main(int argc, char const *argv[])
 {
-(void)argc;
+int i = 0;
 
-if (argc != 3)
+while (argc--)
 {
-	printf("Error\n");
-	return (1);
+	printf("%s\n", argv[i]);
+	i++;
 }
-printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
+
 return (0);
 }
